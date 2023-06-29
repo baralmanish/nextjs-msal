@@ -1,0 +1,75 @@
+/* Typography */
+.h1 {
+    @apply text-3xl font-extrabold;
+}
+
+.h2 {
+    @apply text-2xl font-extrabold;
+}
+
+.h3 {
+    @apply text-xl font-extrabold;
+}
+
+.h4 {
+    @apply text-lg font-extrabold;
+}
+
+@screen md {
+    .h1 {
+        @apply text-6xl;
+    }
+
+    .h2 {
+        @apply text-5xl;
+    }
+
+    .h3 {
+        @apply text-4xl font-extrabold;
+    }
+    
+    .h4 {
+        @apply text-3xl font-extrabold;
+    }
+    
+}
+
+
+/* container */
+.container {
+    @apply !w-full !px-[.75rem] mx-auto xl:!max-w-[1180px] lg:!max-w-[992px] md:!max-w-[720px] sm:!max-w-[576px]
+}
+
+
+/* Buttons */
+.btn,
+.btn-sm {
+    @apply text-sm font-medium inline-flex items-center justify-center rounded-full leading-5 whitespace-nowrap transition duration-150 ease-in-out;
+}
+
+.btn {
+    @apply px-5 py-2.5;
+}
+
+.btn-sm {
+    @apply px-4 py-2;
+}
+
+
+/* gradient colors */
+.gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-indigo-300
+}
+
+
+/* Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
